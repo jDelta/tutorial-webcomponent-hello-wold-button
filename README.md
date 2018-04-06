@@ -1,6 +1,22 @@
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/jdelta/jdelta-hello-world-button)
 # \<jdelta-hello-world-button\>
 
 A simple button that says Hello World when you click on it!
+
+## Demo
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="jdelta-hello-world-button.html">
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<other-element></other-element>
+<jdelta-hello-world-button></jdelta-hello-world-button>
+```
 
 ## Install the Polymer-CLI
 
