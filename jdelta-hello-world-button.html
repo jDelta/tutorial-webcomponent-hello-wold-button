@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="jdelta-hello-world-button">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <button on-click="sayHello">[[text]]</button>
+    </template>
+
+    <script>
+        /**
+         * `jdelta-hello-world-button`
+         * A simple button that says Hello World when you click on it!
+         *
+         * @customElement
+         * @polymer
+         * @demo demo/index.html
+         */
+        class JdeltaHelloWorldButton extends Polymer.Element {
+            static get is() {
+                return 'jdelta-hello-world-button';
+            }
+            static get properties() {
+                return {
+                    text: {type: String}
+                };
+            }
+            sayHello() {
+                alert('Hello World!');
+            }
+        }
+
+        window.customElements.define(JdeltaHelloWorldButton.is, JdeltaHelloWorldButton);
+    </script>
+</dom-module>
