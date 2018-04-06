@@ -1,4 +1,5 @@
 <link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../paper-button/paper-button.html">
 
 <dom-module id="jdelta-hello-world-button">
     <template>
@@ -6,8 +7,12 @@
             :host {
                 display: block;
             }
+            paper-button {
+                background: #2196F3;
+                color:white;
+            }
         </style>
-        <button on-click="sayHello">[[text]]</button>
+        <paper-button raised on-click="sayHello">[[text]]</paper-button>
     </template>
 
     <script>
@@ -25,11 +30,12 @@
             }
             static get properties() {
                 return {
-                    text: {type: String}
+                    text: {type: String},
+                    message: {type: String}
                 };
             }
             sayHello() {
-                alert('Hello World!');
+                alert(this.message);
             }
         }
 
